@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Maintabbar from 'components/content/mainTabbar/Maintabbar.vue'
 
 export default {
   name: 'App',
