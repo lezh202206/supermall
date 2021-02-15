@@ -41,3 +41,8 @@ body {
 .right {
     float: right;
 }
+
+a {
+    text-decoration: none;
+    color: #ff5777;
+}

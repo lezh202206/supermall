@@ -1,0 +1,59 @@
+<template>
+<div class="recommend">
+  <div class="recommend-item">
+    <a href="javascript:;">
+    <img src="" alt="">
+    <div>文字</div>
+  </a>
+  </div>
+  <div class="recommend-item">
+    <a href="javascript:;">
+    <img src="" alt="">
+    <div>文字</div>
+  </a>
+  </div>
+  <div class="recommend-item">
+    <a href="javascript:;">
+    <img src="" alt="">
+    <div>文字</div>
+  </a>
+  </div>
+  <div class="recommend-item">
+    <a href="javascript:;">
+    <img src="" alt="">
+    <div>文字</div>
+  </a>
+  </div>
+</div>
+</template>
+<script>
+export default {
+  name:"HomeRecommendView",
+  props:{
+    recommends:{
+      type:Array,
+      default(){
+         return []
+      }
+    }
+  }
+}
+</script>
+<style scoped>
+.recommend{
+  display: flex;
+  width: 100%;
+  padding: 10px 0 20px;
+  border-bottom:10px solid #eee ;
+}
+.recommend-item{
+  flex: 1;
+  text-align: center;
+  font-size: 12px;
+}
+.recommend-item img{
+  width: 65px;
+  height: 65px;
+  margin-bottom: 10px;
+}
+</style>

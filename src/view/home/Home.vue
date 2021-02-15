@@ -1,17 +1,20 @@
 <template>
   <div id="home">
 <nav-bar class="home-nav">
-  <div slot="left"></div>
-  <div slot="center">购物车</div>
-    <div slot="right"></div>
-   <div></div>
+  <div slot="center">购物街</div>
 </nav-bar>
+<home-swiper :banners="banners"/>
+<home-recommend-view></home-recommend-view>
   </div>
-</template>
+</template> 
 <script>
-
+//导航栏
 import NavBar from 'components/common/navbar/NarBar'
+//轮播图
+import HomeSwiper from './childComps/HomeSwiper.vue'
+import HomeRecommendView from './childComps/HomeRecommendView.vue' 
 import {getHomeMultidata} from 'network/home'
+
 export default {
   name:"Home",
   data(){
@@ -21,7 +24,10 @@ export default {
     }
   },
   components:{
-    NavBar
+    NavBar,
+    HomeSwiper,
+    HomeRecommendView
+  
   },
   created(){
     getHomeMultidata().then(res=>{
