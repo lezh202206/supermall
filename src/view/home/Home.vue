@@ -7,7 +7,7 @@
 <home-recommend-view :recommends="recommends"></home-recommend-view>
 <feature-view/>
 <tab-control :titles="['流行','新款','精选']" class="tab-control"/>
-<goods-list></goods-list>
+<goods-list :goods="goods['pop'].list"></goods-list>
 <ul>
   <li>123</li>
   <li>123</li>
@@ -193,5 +193,6 @@ export default {
 .tab-control{
   position: sticky;
   top: 44px;
+  z-index: 999;
 }
 </style>
