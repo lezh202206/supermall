@@ -1,9 +1,8 @@
 <template>
 <div class="HomeSwper">
   轮播图
-  <!-- {{banners.list.link}} -->
   <!-- <div v-for="item in banners">
-    <a :href="item.list.link" >
+    <a :href="item.link" >
       <img :src="item.image">
     </a>
   </div> -->
@@ -26,9 +25,12 @@ export default {
 .HomeSwper{
   width: 100%;
   height: 200px;
-  background-color: palevioletred;
-  text-align: center;
-  line-height: 200px;
+ flex-shrink: 0;
+line-height: 200px;
 
+text-align: center;
+}
+.HomeSwper img{
+  width: 100%;
 }
 </style>
