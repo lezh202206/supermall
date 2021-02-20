@@ -25,6 +25,7 @@ export default {
   methods:{
     spanClick(index){
       this.currentIndex = index
+      this.$emit('spanClick',index)
     }
   }
 }
